@@ -4,6 +4,7 @@ import { AuthProvider, useAuth } from "./lib/auth";
 import Sidebar from "./components/Sidebar";
 import Dashboard from "./pages/Dashboard";
 import Calendar from "./pages/Calendar";
+import Quiz from "./pages/Quiz";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 
