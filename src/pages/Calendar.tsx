@@ -273,9 +273,9 @@ export default function Calendar() {
 
           {/* Days of Week Header */}
           <div className="grid grid-cols-7 border-b border-white/5">
-            {daysOfWeek.map((day) => (
+            {daysOfWeek.map((day, index) => (
               <div
-                key={day}
+                key={`main-day-${index}`}
                 className="p-4 text-center text-white font-semibold border-r border-white/5 last:border-r-0"
               >
                 {day}
