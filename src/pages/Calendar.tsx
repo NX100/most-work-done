@@ -129,9 +129,9 @@ export default function Calendar() {
             </div>
 
             <div className="grid grid-cols-7 gap-1 mb-2">
-              {["S", "M", "T", "W", "T", "F", "S"].map((day) => (
+              {["S", "M", "T", "W", "T", "F", "S"].map((day, index) => (
                 <div
-                  key={day}
+                  key={`mini-day-${index}`}
                   className="text-center text-xs text-white/60 font-semibold py-1"
                 >
                   {day}
