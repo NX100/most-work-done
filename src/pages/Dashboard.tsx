@@ -28,6 +28,7 @@ import {
   visitorInsightsData,
   generateRandomData,
 } from "../lib/data";
+import { mockQuizStats } from "../lib/quiz-data";
 
 export default function Dashboard() {
   const [searchQuery, setSearchQuery] = useState("");
