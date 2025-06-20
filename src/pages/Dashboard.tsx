@@ -523,7 +523,13 @@ export default function Dashboard() {
                 <div className="mt-6 pt-6 border-t border-white/5">
                   <h4 className="text-white font-medium mb-4">Quick Actions</h4>
                   <div className="space-y-2">
-                    <button className="w-full text-left p-3 bg-brand-purple/10 hover:bg-brand-purple/20 text-brand-purple rounded-lg transition-colors text-sm">
+                    <a
+                      href="/quiz"
+                      className="block w-full text-left p-3 bg-brand-purple/10 hover:bg-brand-purple/20 text-brand-purple rounded-lg transition-colors text-sm"
+                    >
+                      🎯 Take Knowledge Quiz
+                    </a>
+                    <button className="w-full text-left p-3 bg-dark-100 hover:bg-white/5 text-white/70 rounded-lg transition-colors text-sm">
                       Generate Report
                     </button>
                     <button className="w-full text-left p-3 bg-dark-100 hover:bg-white/5 text-white/70 rounded-lg transition-colors text-sm">
