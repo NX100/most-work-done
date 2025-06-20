@@ -131,10 +131,16 @@ export default function Sidebar({ isCollapsed = false }: SidebarProps) {
                     {item.name}
                   </span>
 
-                  {/* Message Badge */}
+                  {/* Badge */}
                   {item.badge && (
                     <div className="ml-auto">
-                      <span className="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-600 bg-red-100 rounded-full">
+                      <span
+                        className={`inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none rounded-full ${
+                          item.badge === "New"
+                            ? "text-brand-purple bg-brand-purple/20 border border-brand-purple"
+                            : "text-red-600 bg-red-100"
+                        }`}
+                      >
                         {item.badge}
                       </span>
                     </div>
