@@ -34,6 +34,12 @@ const menuItems = [
     icon: ChartBarIcon,
   },
   {
+    name: "Quiz",
+    href: "/quiz",
+    icon: AcademicCapIcon,
+    badge: "New",
+  },
+  {
     name: "Invoice",
     href: "/invoice",
     icon: DocumentIcon,
