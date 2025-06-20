@@ -292,7 +292,7 @@ export default function Calendar() {
 
               return (
                 <div
-                  key={index}
+                  key={`calendar-day-${index}-${calendarDay.day}-${calendarDay.isCurrentMonth ? "current" : calendarDay.isNextMonth ? "next" : "prev"}`}
                   className={`
                     min-h-[120px] p-3 border-r border-b border-white/5 last:border-r-0
                     ${!calendarDay.isCurrentMonth ? "bg-white/5" : ""}
