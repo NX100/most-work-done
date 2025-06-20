@@ -120,6 +120,16 @@ function AppRoutes() {
         }
       />
       <Route
+        path="/quiz"
+        element={
+          <ProtectedRoute>
+            <DashboardLayout>
+              <Quiz />
+            </DashboardLayout>
+          </ProtectedRoute>
+        }
+      />
+      <Route
         path="/analytics"
         element={
           <ProtectedRoute>
