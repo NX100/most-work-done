@@ -1,39 +1,58 @@
 // Statistics data for dashboard
 export const todayStats = [
-  { label: "Total Paid Users", value: "100K", increase: "+12%" },
-  { label: "Order in Queue", value: "2340", increase: "+2%" },
-  { label: "Total Products", value: "50K", increase: "+8%" },
+  {
+    id: 1,
+    color: "#605BFF",
+    subtitle: "Total Right Answers",
+    change: "+12%",
+  },
+  {
+    id: 2,
+    color: "#EF37FF",
+    subtitle: "Total Questions",
+    change: "+2%",
+  },
+  {
+    id: 3,
+    color: "#FF8F6B",
+    subtitle: "Questions Attempted",
+    change: "+8%",
+  },
 ];
 
 // Top products data
 export const topProducts = [
   {
+    id: 1,
+    rank: "01",
     name: "3D Illustration",
-    price: "$235",
+    popularity: 75,
     sales: "$6,500",
-    progress: 75,
-    color: "bg-purple-500",
+    color: "#605BFF",
   },
   {
+    id: 2,
+    rank: "02",
     name: "Art Stuff",
-    price: "$235",
+    popularity: 60,
     sales: "$4,500",
-    progress: 60,
-    color: "bg-pink-500",
+    color: "#EF37FF",
   },
   {
+    id: 3,
+    rank: "03",
     name: "Gaming",
-    price: "$235",
+    popularity: 45,
     sales: "$3,200",
-    progress: 45,
-    color: "bg-orange-500",
+    color: "#FF8F6B",
   },
   {
+    id: 4,
+    rank: "04",
     name: "UI Kits",
-    price: "$235",
+    popularity: 35,
     sales: "$2,800",
-    progress: 35,
-    color: "bg-green-500",
+    color: "#42E8B8",
   },
 ];
 
@@ -48,7 +67,29 @@ export const levelData = [
 ];
 
 // Customer fulfillment data
-export const customerFulfillmentData = [
+export const customerFulfillmentData = {
+  lastMonth: 15420,
+  thisMonth: 18750,
+  chartData: [
+    { month: "Jan", lastMonth: 4000, thisMonth: 3200 },
+    { month: "Feb", lastMonth: 3000, thisMonth: 4100 },
+    { month: "Mar", lastMonth: 2000, thisMonth: 2800 },
+    { month: "Apr", lastMonth: 2780, thisMonth: 3908 },
+    { month: "May", lastMonth: 1890, thisMonth: 4800 },
+    { month: "Jun", lastMonth: 2390, thisMonth: 3800 },
+    { month: "Jul", lastMonth: 3490, thisMonth: 4300 },
+  ],
+};
+
+// Maths completion data
+export const mathsCompletion = {
+  progressValue: 78,
+  percentage: 78,
+  description: "Great progress! Keep it up to reach your goal.",
+};
+
+// Visitor insights data
+export const visitorInsightsData = [
   { month: "Jan", value: 4000 },
   { month: "Feb", value: 3000 },
   { month: "Mar", value: 2000 },
@@ -56,20 +97,11 @@ export const customerFulfillmentData = [
   { month: "May", value: 1890 },
   { month: "Jun", value: 2390 },
   { month: "Jul", value: 3490 },
-];
-
-// Maths completion percentage
-export const mathsCompletion = 78;
-
-// Visitor insights data
-export const visitorInsightsData = [
-  { day: "Mon", desktop: 4000, mobile: 2400 },
-  { day: "Tue", desktop: 3000, mobile: 1398 },
-  { day: "Wed", desktop: 2000, mobile: 2800 },
-  { day: "Thu", desktop: 2780, mobile: 3908 },
-  { day: "Fri", desktop: 1890, mobile: 4800 },
-  { day: "Sat", desktop: 2390, mobile: 3800 },
-  { day: "Sun", desktop: 3490, mobile: 4300 },
+  { month: "Aug", value: 4200 },
+  { month: "Sep", value: 3800 },
+  { month: "Oct", value: 4500 },
+  { month: "Nov", value: 4100 },
+  { month: "Dec", value: 4800 },
 ];
 
 // Calendar events data
@@ -122,5 +154,10 @@ export function generateRandomData() {
     newRegistrations: Math.floor(Math.random() * 50) + 10,
     activeUsers: Math.floor(Math.random() * 500) + 1500,
     revenue: Math.floor(Math.random() * 10000) + 50000,
+    totalRightAnswers: Math.floor(Math.random() * 100) + 120,
+    totalQuestions: Math.floor(Math.random() * 50) + 180,
+    questionsAttempted: Math.floor(Math.random() * 30) + 150,
+    mathsProgress: Math.floor(Math.random() * 20) + 70,
+    visitorCount: Math.floor(Math.random() * 500) + 1200,
   };
 }
