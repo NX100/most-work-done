@@ -93,13 +93,6 @@ export default function Sidebar({ isCollapsed = false }: SidebarProps) {
 
   return (
     <div className="h-screen w-[218px] bg-dark-100 border-r border-white/5 flex flex-col">
-      {/* macOS Window Controls */}
-      <div className="flex items-center gap-2 p-6">
-        <div className="w-3 h-3 rounded-full bg-red-500"></div>
-        <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-        <div className="w-3 h-3 rounded-full bg-green-500"></div>
-      </div>
-
       {/* Navigation Menu */}
       <nav className="flex-1 px-4 pb-4">
         <div className="space-y-1">

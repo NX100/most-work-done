@@ -48,13 +48,6 @@ export default function Dashboard() {
       {/* Header */}
       <header className="bg-dark-200 border-b border-white/5 px-6 py-4">
         <div className="flex items-center justify-between">
-          {/* macOS Window Controls */}
-          <div className="flex items-center gap-2">
-            <div className="w-3 h-3 rounded-full bg-red-500"></div>
-            <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-            <div className="w-3 h-3 rounded-full bg-green-500"></div>
-          </div>
-
           {/* Search Bar */}
           <div className="flex-1 max-w-lg mx-8">
             <div className="relative">
